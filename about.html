@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Caveat+Brush|Sue+Ellen+Francisco" rel="stylesheet">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#flip").click(function(){
+				$("#panel").slideToggle("slow");
+			});
+		    $("facebook").onclick(function(){
+
+		    })
+  });
+
+	</script>
+	<style type="text/css">
+	body {
+		margin-left: 60px;
+		margin-right:60px;
+
+	}
+	h1 {
+		font-family:'Alegreya SC', cursive;
+		font-size: 35px;
+		color: black;
+	}	
+	
+	#flip {
+		padding: 30px;
+        font-size: 30px;
+		color: #696969;
+		background-color: lightblue;
+	}
+	#panel {
+		padding: 30px;
+		font-size: 25px;
+		display: none;
+	}
+	@import "compass/css3";
+
+	@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans); 
+	div.social-wrap button {
+    padding-right: 45px;
+    height: 35px;
+    background: none;
+    border: none;
+    margin-right: 20px;
+    background-size: 35px 35px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    color: white;
+    font-family:"Merriweather Sans", sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+    width: 205px;
+    border-bottom: 2px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    box-shadow: 0 4px 2px -2px gray;
+    text-shadow: rgba(0, 0, 0, .5) -1px -1px 0;
+	}
+	
+	button#facebook {
+    border-color: #2d5073;
+    background-color: #3b5998;
+    background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
+	}
+	button#twitter {
+    border-color: #007aa6;
+    background-color: #008cbf;
+    background-image: url(https://g.twimg.com/Twitter_logo_white.png);
+	}
+	button#googleplus {
+    border-color: #111;
+    background-color: #db3236;
+    text-shadow: #333 -1px -1px 0;
+    background-image:url(http://www.iconsdb.com/icons/preview/white/google-plus-xxl.png);
+	}  
+	div.social-wrap button{
+		float:right;
+		margin-right: 150px;
+	}
+	div.social-wrap button:active {
+    background-color: #222;
+	}
+	</style>
+
+	
+</head>
+<body>
+<div id="flip">Who Are We?</div>
+<div id="panel">We are an application built around connecting youth through similar interests. Our unique screening process uses memes to connect users, allowing for friendships to blossom.<br><br>Currently our algorithm accurately identifies and matches users through  memes found on Reddit. We are looking into expanding to include Twitter and Facebook soon.</div>
+<hr>
+<div class="social-wrap a">
+<button id="facebook">Sign in with Facebook</button>
+    <button id="twitter">Sign in with Twitter</button>
+    <button id="googleplus">Sign in with Google</button>
+</div> 
+
+
+</body>
+</html>
